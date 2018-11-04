@@ -10,6 +10,12 @@ if len(sys.argv) < 2:
     print("  > python generate_dataset.py model.csv model.joblib")
     print("\n     This will result in a joblib file that has been trained to find")
     print("      nearest neighbors for the passed model.")
+    print("")
+    print("The model csv file is expected to be an array such as that")
+    print("  > cat model.csv")
+    print("1, 0, 0")
+    print("0, 0, 0")
+    print("1, 1, 1")
     sys.exit(0)
 
 MODEL_FILE = sys.argv[1]
